@@ -1,0 +1,45 @@
+{
+  "extends": [
+    "standard",
+    "standard-react"
+  ],
+  "plugins": [
+    "babel",
+    "react",
+    "promise",
+    "jest"
+  ],
+  "env": {
+    "browser": true,
+    "es6": true,
+    "jest/globals": true
+  },
+  "globals": {
+    "__DEV__": false
+  },
+  "rules": {
+    // Coding style
+    "key-spacing": 0,
+    "jsx-quotes": [2, "prefer-single"],
+    "max-len": [2, 180, 2],
+    "object-curly-spacing": [2, "always"],
+    "indent": [2, 2, {"SwitchCase": 2}],
+    "comma-dangle": 0,
+    "quotes": [1, "single", { "allowTemplateLiterals": true }],
+    "semi": 2,
+    "space-before-function-paren": 0,
+    "camelcase": [2, { "properties": "always" }],
+    "no-irregular-whitespace": 2,
+
+    // React style
+    "react/prop-types": 1,
+    "react/no-multi-comp": 1,
+
+    // Jest
+    "jest/no-disabled-tests": "warn",
+    "jest/no-focused-tests": "error",
+    "jest/no-identical-title": "error",
+    "jest/prefer-to-have-length": "warn",
+    "jest/valid-expect": "error"
+  }
+}
