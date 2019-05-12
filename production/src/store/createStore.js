@@ -2,6 +2,9 @@ import thunk from 'redux-thunk'
 import { compose, applyMiddleware, createStore } from 'redux'
 import { rootReducer, makeRootReducer } from './reducers'
 
+// TODO: remove this temp
+const __DEV__ = false
+
 export default (initialState = {}) => {
   // Middleware Configuration
   const middleware = [thunk]

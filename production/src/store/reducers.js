@@ -1,4 +1,5 @@
 import { combineReducers } from 'redux'
+import chatReducer from '../Chat/reducers'
 
 export const makeRootReducer = (asyncReducers) => {
   return combineReducers({
@@ -14,5 +15,5 @@ export const injectReducer = (store, { key, reducer }) => {
 }
 
 export const rootReducer = combineReducers({
-
+  chat: chatReducer
 })

@@ -2,7 +2,8 @@ import createStore from './createStore'
 
 // Store Instantiation
 const initialState = {
-  testVar: true
+  testVar: 'success',
+  chat: {}
 }
 
 // Start: Temp code for static app initialization
