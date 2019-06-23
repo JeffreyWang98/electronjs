@@ -1,14 +1,14 @@
 import React from 'react'
 import logo from './logo.svg'
 import './App.css'
-import UserBubble from './Chat/UserBubble'
+import ChatWindow from '../Chat/ChatWindow/ChatWindow'
 
 function App () {
   return (
     <div className='App'>
       <header className='App-header'>
         <img src={logo} className='App-logo' alt='logo' />
-        <UserBubble />
+        <ChatWindow />
         <a
           className='App-link'
           href='https://reactjs.org'

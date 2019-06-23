@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './index.css'
-import App from './App'
+import App from './toRemove/App'
 import * as serviceWorker from './serviceWorker'
 import { StoreContext } from 'redux-react-hook'
 import store from './store'

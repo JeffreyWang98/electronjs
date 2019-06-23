@@ -1,7 +1,11 @@
 import * as AC from './ActionConstants'
 
 const initialState = {
-  users: {}
+  users: {
+    meow: {
+      status: 'success'
+    }
+  }
 }
 
 export default function chatReducer(state = initialState, action) {

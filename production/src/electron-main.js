@@ -21,11 +21,13 @@ function createWindow () {
   // and load the index.html of the app.
   // mainWindow.loadFile('index.html')
   const startUrl = process.env.ELECTRON_START_URL || url.format({
-    pathname: path.join(__dirname, '/../build/index.html'),
+    pathname: path.join(__dirname, '/../../build/index.html'),
     protocol: 'file:',
     slashes: true
   })
   mainWindow.loadURL(startUrl)
+
+  process.env['ELECTRON_DISABLE_SECURITY_WARNINGS'] = 'true'
 
   // Open the DevTools.
   mainWindow.webContents.openDevTools()
